@@ -1,0 +1,287 @@
+@font-face{
+    font-family: Romanesco;
+    src: url('../font/Romanesco/Romanesco-Regular.ttf');
+}
+
+:root{
+    --coklat:#C9AD1A;
+}
+
+*{
+    font-family: Romanesco;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--coklat);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background:#f7f7f7;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1 rem rgba(0, 0, 0, 1);
+}
+
+
+header .logo i{
+    padding-right: .5rem;
+}
+header .navbar a{
+    font-size: 3rem;
+    margin-left: 3rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color: var(--coklat);
+}
+
+#menu-bar{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #666;
+    border: .1rem solid #666;
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    display: none;
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        border-top: 1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid var(--coklat);
+        background: white;
+    }
+}
+@media(max-width:400px){
+    html{
+        font-size: 50%;
+    }
+    
+}
+h1 {
+    position: absolute;
+left: 750px;
+top: 120px;
+
+font-family: 'Romanesco';
+
+color: #000000;
+}
+span{
+    color: #C9AD1A;
+}
+
+/*gambar1*/
+.img1 {
+    position: absolute;
+width: 273px;
+height: 352px;
+left: 100px;
+top: 35px;
+}
+p{
+    position: absolute;
+width: 383px;
+height: 118px;
+left: 535px;
+top: 150px;
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 16px;
+
+color: #000000;
+}
+
+/*gambar2*/
+.img2 {
+    position: absolute;
+width: 273px;
+height: 352px;
+left: -15px;
+top: 35px;
+}
+.p2 {
+    position: absolute;
+    width: 383px;
+    height: 118px;
+    left: -540px;
+    top: 170px;
+    
+    font-family: 'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    
+    color: #000000;
+}
+
+/*gambar3*/
+.img3 {
+    position: absolute;
+width: 273px;
+height: 352px;
+left: 60px;
+top: 35px;
+}
+.p3{
+    position: absolute;
+width: 383px;
+height: 118px;
+left: 500px;
+top: 110px;
+
+font-family: 'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 16px;
+
+color: #000000;
+}
+.img4{
+    position: absolute;
+width: 273px;
+height: 352px;
+left: -15px;
+top: 35px;
+
+}
+.p4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    width: 376.95px;
+    height: 109.56px;
+    left: -540px;
+    top: 170px;
+
+color: #000000;
+}
+.img5{
+    position: absolute;
+width: 273px;
+height: 352px;
+left: 60px;
+top: 35px;
+
+}
+.p5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+width: 383.76px;
+height: 106.78px;
+left: 500px;
+top: 130px;
+
+color: #000000;
+}
+
+
+/*layout*/
+
+.div1{
+    position: absolute;
+width: 322px;
+height: 407px;
+left: 270px;
+top: 240px;
+
+background: #C9AD1A;
+}
+.d2{
+    position: absolute;
+width: 322px;
+height: 407px;
+left: 840px;
+top: 678px;
+
+background: #C9AD1A;
+}
+.d3{
+    position: absolute;
+width: 322px;
+height: 407px;
+left: 270px;
+top: 1147px;
+
+background: #C9AD1A;
+}
+.d4{
+    position: absolute;
+width: 322px;
+height: 407px;
+left: 840px;
+top: 1628px;
+
+background: #C9AD1A;
+}
+.d5{
+    position: absolute;
+width: 322px;
+height: 407px;
+left: 270px;
+top: 2107px;
+
+background: #C9AD1A;
+}
