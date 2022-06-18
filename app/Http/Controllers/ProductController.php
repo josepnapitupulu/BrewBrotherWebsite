@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use illuminate\Support\Facades\Validator;
 use App\Models\Product;
 
 
@@ -39,13 +40,19 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        $validator = $request->validate([
+            'name' => 'required|unique:products|',
+            'harga' => 'required',
+            'jenis_id' => 'required',
+        ]);
+
         $model = new Product;
         $model->name = $request->name;
         $model->harga = $request->harga;
         $model->jenis_id = $request->jenis_id;
         $model->save();
 
-        return redirect('product');
+        return redirect('product')->with('success','Data Added Successfully.');
     }
 
     /**

@@ -8,6 +8,7 @@
           <th>No Telepon</th>
           <th>Alamat</th>
           <th>Total Pembelian</th>
+          <th>Product Yang Dipesan</th>
           <th>Pembayaran</th>
         </tr>
         <?php
@@ -20,6 +21,7 @@
           <td>{{ $menu->user->nohp }}</td>
           <td>{{ $menu->user->alamat }}</td>
           <td>{{ $menu->total_harga }}</td>
+          <td>{{ $menu->product->name}}</td>
           <td>
             <form action="{{ url('dibeli/'.$menu->id) }}" method="POST" onsubmit="return confirm('Apakah sudah di bayar ?')">
               @csrf

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('status')->default(0);
             $table->integer('total_harga');
             $table->integer('user_id');
+            $table->integer('product_id')->nullable();
             $table->timestamps();
         });
     }

@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Pesanan;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class DibeliController extends Controller
 {
     public function index()
     {
-        $menus = Pesanan::where('status', '=', '1')->with('user')->get();
+        $menus = Pesanan::where('status', '=', '1')->with('user')->with('product')->get();
         return view('dibeli.index', compact('menus'));
     }
 
