@@ -30,7 +30,7 @@
                                         <td>
                                             <form method="post" action="{{ url('pesan') }}/{{ $product->id }}">
                                             @csrf
-                                                <input type="text" name="jumlah_pesan" style="font-size: 1.7rem" class="form-control" required>
+                                                <input type="number" name="jumlah_pesan" style="font-size: 1.7rem" class="form-control" required>
                                                 <button type="submit" class="btn btn-primary mt-3" style="font-size: 1.7rem" onclick="swal('Pesanan Sukses Masuk Keranjang ', 'Terimakasih', 'success')"><i class="bi bi-cart2"></i> pesan</button>
                                                 <script src="dist/sweetalert2.all.min.js"></script>
                                             </form>

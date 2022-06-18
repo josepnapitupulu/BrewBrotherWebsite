@@ -20,7 +20,7 @@
         <div class="form-group row">
             <label for="inputPassword3" class="col-sm-2 col-form-label">Jenis Barang</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputPassword3" name="jenis_id" placeholder="Jenis Barang">
+                <input type="number" class="form-control" id="inputPassword3" name="jenis_id" placeholder="Jenis Barang">
             </div>
         </div><br>
         <button type="submit" class="btn btn-primary">Tambah</button>

@@ -20,7 +20,7 @@
 <body>
 <div id="preloader"></div>
     <header>
-    <a href="#"><img class="logo" src="images/logo1.png" alt="logo" widht = "70" height = "70"></a>
+    <a href="/"><img class="logo" src="images/logo1.png" alt="logo" widht = "70" height = "70"></a>
         <div id="menu-bar" class="fas fa-bars"></div>
         <nav class="navbar">
             <a href="/">Home</a>

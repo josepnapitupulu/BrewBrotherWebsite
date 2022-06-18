@@ -20,7 +20,7 @@
 <body>
 <div id="preloader"></div>
   <header>
-    <a href="#"><img class="logo" src="{{asset('images/logo1.png') }}" alt="logo" widht = "70" height = "70"></a>
+    <a href="/"><img class="logo" src="{{asset('images/logo1.png') }}" alt="logo" widht = "70" height = "70"></a>
         <div id="menu-bar" class="fas fa-users"></div>
         <nav class="navbar">
             <a href="/">Home</a>
@@ -101,8 +101,8 @@
                     <div class="useful-link">
                         <h5>Our Service</h5><br>
                         <p>><a href="#payment">Pembayaran</a></p><br>
-                        <a href="#facebook"><img src="{{asset('images/iconFb.png') }}" width="40px" alt="fb-icon"></a>            
-                        <a href="#instagram"><img src="{{asset('images/iconIg.png') }}" width="50px" alt="ig-icon"></a>
+                        <a href="https://www.facebook.com/pages/Brew%20Brother%20Coffee%20&%20Roastry/355704245329646/"><img src="{{asset('images/iconFb.png') }}" width="40px" alt="fb-icon"></a>            
+                        <a href="https://www.instagram.com/brewbrothercoffee/"><img src="{{asset('images/iconIg.png') }}" width="50px" alt="ig-icon"></a>
                     </div>
                 </div>
               <center><p>&#169; Copyright Team 5 PA 1 Institut Teknologi Del 2022</p></center>

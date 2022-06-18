@@ -51,7 +51,7 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/pemesanan', [PemesananController::class, 'index'])->middleware('auth');
+Route::get('/pemesanan', [PemesananController::class, 'index']);
 Route::get('pesan/{id}', [App\Http\Controllers\PesanController::class, 'index'])->middleware('auth');
 Route::post('pesan/{id}', [App\Http\Controllers\PesanController::class, 'pesan']);
 Route::get('check-out', [App\Http\Controllers\PesanController::class, 'check_out'])->middleware('auth');
