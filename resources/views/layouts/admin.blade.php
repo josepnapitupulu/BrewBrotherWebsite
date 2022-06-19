@@ -23,7 +23,8 @@
                 <div class="sidebar-heading border-bottom bg-light">Administrator</div>
                 <div class="list-group list-group-flush">
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/product">Product</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/dibeli">Pesanan</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/dibeli">Penjemputan</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/pembelian">Pesanan</a>
                 </div>
             </div>
             <!-- Page content wrapper-->

@@ -13,12 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pesanans', function (Blueprint $table) {
-            $table->id();
-            $table->string('status')->default(0);
-            $table->integer('total_harga');
-            $table->integer('user_id');
-            $table->timestamps();
+        Schema::table('pesanan_details', function (Blueprint $table) {
+            $table->softDeletes();
         });
     }
 
@@ -29,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pesanans');
+        Schema::table('pesanan_details', function (Blueprint $table) {
+            $table->dropSoftDeletes();
+        });
     }
 };

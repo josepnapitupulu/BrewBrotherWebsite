@@ -11,7 +11,7 @@ class DibeliController extends Controller
 {
     public function index()
     {
-        $menus = Pesanan::where('status', '=', '1')->with('user')->with('product')->get();
+        $menus = Pesanan::where('status', '=', '1')->with('user')->get();
         return view('dibeli.index', compact('menus'));
     }
 

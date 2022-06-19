@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->integer('harga');
             $table->boolean('is_ready')->default(true);
-            $table->integer('jenis_id');
+            $table->integer('jenis_id')->default(0);
             $table->timestamps();
         });
     }

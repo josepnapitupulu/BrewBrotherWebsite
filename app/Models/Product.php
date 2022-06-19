@@ -18,8 +18,4 @@ class Product extends Model
     {
         return $this->hasMany(PesananDetail::class, 'product_id', 'id');
     }
-    public function pesanan()
-    {
-        return $this->hasMany(Pesanan::class, 'product_id', 'id');
-    }
 }

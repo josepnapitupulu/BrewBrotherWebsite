@@ -74,7 +74,8 @@ Route::group(['middleware' => ['auth', 'hakakses:admin']], function(){
 Route::get('dibeli', [App\Http\Controllers\DibeliController::class, 'index']);
 Route::delete('dibeli/{id}', [App\Http\Controllers\DibeliController::class, 'delete']);
 
-
+Route::get('pembelian', [App\Http\Controllers\PembelianController::class, 'index']);
+Route::delete('pembelian/{id}', [App\Http\Controllers\PembelianController::class, 'delete']);
 
 
 
